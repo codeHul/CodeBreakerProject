@@ -76,9 +76,9 @@ function getResults(input) {
 	}
 }
 
-function showAnswer(answer) {
+function showAnswer(show) {
 	code.innerHTML = answer.value;
-	if (answer) {
+	if (show) {
 		code.className += ' success';
 	} else code.className += ' failure';
 }
