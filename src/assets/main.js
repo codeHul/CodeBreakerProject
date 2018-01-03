@@ -19,12 +19,12 @@ function guess() {
     if (getResults(input.value)) {
     	setMessage('You Win! :)');
     	showAnswer(true);
-    } else if (attempt.value >= 10) {
-    	setMessage('You Lose! :(');
-    	showReplay();
-    } else {
+    } else if (attempt.value < 10) {
     	setMessage('Incorrect, try again');
     	showAnswer(false);
+    } else {
+    	setMessage('You Lose! :(');
+    	showReplay();
     }
 }
 
