@@ -17,13 +17,13 @@ function guess() {
     }
 
     if (getResults(input.value)) {
-    	setMessage('You win! :)');
+    	setMessage('You Win! :)');
     	showAnswer(true);
-    } else if (attempt.value >= 10) {
-    	setMessage('You lose! :(');
+    } else if (attempt.value > 10) {
+    	setMessage('You Lose! :(');
     	showReplay();
     } else {
-    	setMessage('Incorrect, try again. ' + attempt.value + ' attempts 	');
+    	setMessage('Incorrect, try again');
     	showAnswer(false);
     }
 }
